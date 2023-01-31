@@ -1,0 +1,13 @@
+﻿{
+  "Id": "KjNrYuFSxUC0CM1KS0vXAw",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/KjNrYuFSxUC0CM1KS0vXAw",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Remote Control",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:56.2707334Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:56.2707334Z"
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Id": "Fyv4tuEtQ0OmoexhTU5jpQ",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/Fyv4tuEtQ0OmoexhTU5jpQ",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Annotate",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:56.6263484Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:56.6263484Z"
+}

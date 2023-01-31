@@ -1,0 +1,13 @@
+﻿{
+  "Id": "NpwH2hnrSUWO6ZUNDTEeEA",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/NpwH2hnrSUWO6ZUNDTEeEA",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Screen Sharing",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2023-01-30T06:32:54.9043183Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:54.9043183Z"
+}

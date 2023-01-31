@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zcDDcVaw4k-uKUX4SEQBJw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="6, 23, 80, 52" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Mute, currently'" FullSelectorArgument="&lt;ctrl name='Mute, currently unmuted, Alt+A' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Mute, currently unmuted, Alt+A' role='push button' automationid='' check:text='Mute, currently unmuted, Alt+A' /&gt;" Guid="5431f6ff-6270-47ad-9af1-8fcdd529455f" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="185043cf091861e01b47dc9614efcbbe.png" xmlns="">0A69WViCgsEa-Kxg6OS7kNQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

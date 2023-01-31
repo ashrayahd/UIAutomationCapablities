@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4RlnKdlwiUWxPCjLwCI8tg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="292, 23, 90, 52" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Chat'" FullSelectorArgument="&lt;ctrl name='Chat' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Chat' role='push button' automationid='' check:text='Chat' /&gt;" Guid="d5f3a735-2dd8-4882-af5c-03f35728bddd" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="65ad56b774a9035a7214eb36b67f8702.png" xmlns="">0eteKajvcXkSI3Uag1lpi2g</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

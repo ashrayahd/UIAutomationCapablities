@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UALcS5rmYkC_kbMRdyaLuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="289, 1, 26, 22" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Dock to top'" FullSelectorArgument="&lt;ctrl name='Dock to top' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Dock to top' role='push button' automationid='' check:text='Dock to top' /&gt;" Guid="f6fe87c5-8b12-4919-a73a-01d3a08fc19c" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="37d84109b389935a391d32a58ae6db91.png" xmlns="">0LuVxqz-2wE24JTfWkKFrww</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

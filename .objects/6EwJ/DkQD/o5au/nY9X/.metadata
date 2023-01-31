@@ -1,0 +1,13 @@
+﻿{
+  "Id": "nY9X4XOfyUOEBlB5ivXMww",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/nY9X4XOfyUOEBlB5ivXMww",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Dock to top",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:55.1159013Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:55.1159013Z"
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Id": "dhC0hyeL6UCV9od5Ccj6Ug",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/dhC0hyeL6UCV9od5Ccj6Ug",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Stop Share (Alt+S)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2023-01-30T06:32:54.9943206Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:54.9943206Z"
+}

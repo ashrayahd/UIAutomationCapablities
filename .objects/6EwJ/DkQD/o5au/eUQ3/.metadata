@@ -1,0 +1,13 @@
+﻿{
+  "Id": "eUQ3aSLBn0CxUG_GOetdig",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/eUQ3aSLBn0CxUG_GOetdig",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Video Settings…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2023-01-30T06:32:55.6418258Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:55.6418258Z"
+}

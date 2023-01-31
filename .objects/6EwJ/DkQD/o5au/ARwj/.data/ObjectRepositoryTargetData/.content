@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1MqpNB3hdUiLYFa1aumz7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="182, 23, 106, 52" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Open participants'" FullSelectorArgument="&lt;ctrl name='Open participants panel, 4 participants, Alt+U' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Open participants panel, 4 participants, Alt+U' role='push button' automationid='' check:text='Open participants panel, 4 participants, Alt+U' /&gt;" Guid="bc0727b9-abd5-450d-ad10-ba5fa6b6c3fb" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2e719d554cbe895ee33d35f856ccdf1d.png" xmlns="">0uG6dQq6Cf0-N-WRDoGcrmg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

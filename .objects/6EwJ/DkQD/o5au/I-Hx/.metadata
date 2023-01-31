@@ -1,0 +1,13 @@
+﻿{
+  "Id": "I-HxltJrD02UZJmN0euIDg",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/I-HxltJrD02UZJmN0euIDg",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Pause Share (Alt+T)",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:56.1292389Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:56.1292389Z"
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Id": "SR5Bckf3G0GnW5j39ENfQA",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/SR5Bckf3G0GnW5j39ENfQA",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Start Video (Alt+V)",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:55.5353Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:55.5353Z"
+}

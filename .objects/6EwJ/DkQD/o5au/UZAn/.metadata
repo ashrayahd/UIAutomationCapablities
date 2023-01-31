@@ -1,0 +1,13 @@
+﻿{
+  "Id": "UZAnTo2c8U-HmV6LR49Eag",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/UZAnTo2c8U-HmV6LR49Eag",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Loan Term",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-01-30T06:32:54.4544537Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:54.4544537Z"
+}

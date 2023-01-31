@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_QtyYcXp3EeQ9bIve0bwJw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="638, 23, 112, 52" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Remote Control'" FullSelectorArgument="&lt;ctrl name='Remote Control' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Remote Control' role='push button' automationid='' check:text='Remote Control' /&gt;" Guid="e9527d29-906f-419d-9d2c-c62d0ebade03" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="747ac1fd8e09403312fe97e9039f2405.png" xmlns="">0H4DTPQTnH0mKmqZhA0X9qA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

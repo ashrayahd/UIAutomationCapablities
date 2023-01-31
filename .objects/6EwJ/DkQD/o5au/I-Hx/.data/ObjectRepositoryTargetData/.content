@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Tdb08S5gJ0mGemnXrSe4vw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="474, 23, 84, 52" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Pause Share (Alt+T)'" FullSelectorArgument="&lt;ctrl name='Pause Share (Alt+T)' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Pause Share (Alt+T)' role='push button' automationid='' check:text='Pause Share (Alt+T)' /&gt;" Guid="7a9fc633-809b-466a-a37e-eea38b830d37" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="109ae31f93a2a0f0537552ed156e3758.png" xmlns="">0AL7XQgKq8kO3CwrGyvTJkA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

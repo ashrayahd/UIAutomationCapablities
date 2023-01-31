@@ -1,0 +1,13 @@
+﻿{
+  "Id": "wf3e7BSYqEurhDpar_iVvg",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/wf3e7BSYqEurhDpar_iVvg",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Audio Settings",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2023-01-30T06:32:55.4379964Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:55.4379964Z"
+}

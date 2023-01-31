@@ -1,0 +1,12 @@
+﻿{
+  "Id": "o5auWtELl0WVk9dKTcklbw",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/DkQDluoGYECZSsFTyvk_Jg",
+  "Name": "Chrome: UiBank",
+  "Type": "Screen",
+  "Created": "2023-01-30T06:32:53.7154533Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:53.7154533Z"
+}

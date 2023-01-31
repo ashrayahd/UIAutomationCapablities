@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xNwrdYLzDEWcYV-apCNy8A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="64, 27, 20, 26" DesignTimeScaleFactor="1" ElementType="ArrowButton" FriendlyName="'Audio Settings'" FullSelectorArgument="&lt;ctrl name='Audio Settings' role='drop down button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Audio Settings' role='drop down button' automationid='' check:text='Audio Settings' /&gt;" Guid="b034d6a7-cf5c-436a-a621-2d5c3f08a847" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c315f6b2fe70b76fde2e0d260462ba93.png" xmlns="">0aR8463c-TUajtLETkwpIQQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

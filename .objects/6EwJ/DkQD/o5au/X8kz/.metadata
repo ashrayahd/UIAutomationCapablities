@@ -1,0 +1,13 @@
+﻿{
+  "Id": "X8kzYhjavE2Jqmh6ns1ufQ",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/X8kzYhjavE2Jqmh6ns1ufQ",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "You are",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:55.2101414Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:55.2101414Z"
+}

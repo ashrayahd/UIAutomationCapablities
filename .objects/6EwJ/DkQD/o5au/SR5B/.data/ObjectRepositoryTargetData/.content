@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6_qOz6KrcU2qfqOC2gxJyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="90, 23, 88, 52" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Start Video (Alt+V)'" FullSelectorArgument="&lt;ctrl name='Start Video (Alt+V)' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Start Video (Alt+V)' role='push button' automationid='' check:text='Start Video (Alt+V)' /&gt;" Guid="991c2b1b-72da-437e-ad41-290958e6815b" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7a22be6a3fdd6683fac4c3afcbc4ac4e.png" xmlns="">04xnOwR-J_UyElDAs5iQ5Jg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

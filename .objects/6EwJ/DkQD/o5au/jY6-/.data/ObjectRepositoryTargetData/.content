@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Cb40Nm6obEeDQLNp-DaIlw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="838, 23, 64, 52" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'More'" FullSelectorArgument="&lt;ctrl name='More' role='drop down button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='More' role='drop down button' automationid='' check:text='More' /&gt;" Guid="34766ace-814e-4ce9-8e3d-632c3aa5e28c" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8145dcb6ae7a5b7904668f31d243d938.png" xmlns="">0vgFBe-1dfkylFf7coyQ86w</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

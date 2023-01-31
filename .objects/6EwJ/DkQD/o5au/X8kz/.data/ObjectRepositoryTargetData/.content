@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VZtw1RtWlkqu26_0byakWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="501, 4, 18, 16" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'You are'" FullSelectorArgument="&lt;ctrl name='You are using enhanced encryption' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='You are using enhanced encryption' role='push button' automationid='' check:text='You are using enhanced encryption' /&gt;" Guid="d53c4e1f-8c1f-447e-803b-74412c91c88b" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFloatToolbarClass' title='Screen Sharing Meeting Controls' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d7b86deed4340f5ef47247c409f8d941.png" xmlns="">0xExfWY5MnE2oJfZ2mCJ5tg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

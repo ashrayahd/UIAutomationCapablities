@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PBRITAI58EG8vGsn3ZV1TA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="425, 242, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'arrow_back'" FullSelectorArgument="&lt;webctrl aaname=' arrow_back ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' arrow_back ' tag='SPAN' type='' class='material-icons text-white' check:text='arrow_back' /&gt;" Guid="e33508ac-7247-4309-9f1e-a23d5174444b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACoSURBVEhL7dXBCcMwDEDRZpWulCUyQK8dI7fMVXLzAi0lJCWQi4rSCgRRYtXIOhQb/snGD4yxT1UTwLMCmlfAbe0It9cCXSvMKfoNRGyBz7hPUEtrIulBjg0zXK7CGkU6kGNjOobFQUMMOwaNMWwfzIBhMsixhPHsH9s9v4nguZt8wTXXI6VcLw1ljMZBzBDVgRhHsz9tFEezP94Uom7fk0EFNO/fwQBvaH14h2k5s/EAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="79804483342099726c1628ce5c22f2cc.png" xmlns="">0BTBee0MlAkSI8Px39QJGzQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

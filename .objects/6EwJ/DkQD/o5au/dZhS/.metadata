@@ -1,0 +1,13 @@
+﻿{
+  "Id": "dZhSblqUx0ungC7Pw_BkwQ",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/dZhSblqUx0ungC7Pw_BkwQ",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "arrow_back",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:54.0819821Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:54.0819821Z"
+}

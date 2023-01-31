@@ -1,0 +1,13 @@
+﻿{
+  "Id": "BI48LbwTM0m9ChKYdiFK0w",
+  "Reference": "Hfg6zKqATkGtkm539R2tog/BI48LbwTM0m9ChKYdiFK0w",
+  "ParentRef": "Hfg6zKqATkGtkm539R2tog/o5auWtELl0WVk9dKTcklbw",
+  "Name": "Closed, open Apps panel,",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Created": "2023-01-30T06:32:56.7831616Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-30T06:32:56.7831616Z"
+}
