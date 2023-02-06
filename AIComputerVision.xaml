@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AIComputerVision" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1125,1015" sap2010:WorkflowViewState.IdRef="AIComputerVision_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AIComputerVision" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="772,1674" sap2010:WorkflowViewState.IdRef="AIComputerVision_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="78">
       <x:String>System.Activities</x:String>
@@ -105,9 +105,8 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AIComputerVision" sap:VirtualizedContainerService.HintSize="594,1576" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AIComputerVision" sap:VirtualizedContainerService.HintSize="594,1609" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Default="LzNyYaAQpTMIluVz/ROTSe++59md6bsqDWK5rSNX1KJv58PmmRFSlvXz2kQrCJ0H" Name="CVAPIKey" />
       <Variable x:TypeArguments="sd2:DataTable" Name="ExtractDataTable" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -115,14 +114,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" ApiKey="[CVAPIKey]" CvMethod="ElementDetection, OCR" DesignTimeCacheId="ea1d8efe-0042-4c6b-88e4-ec4466b3d438" DisplayName="CV Screen Scope 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="532,526" sap2010:WorkflowViewState.IdRef="CVScope_8" SendOnPremData="False" UseLocalServer="True" Version="V5">
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" ApiKey="[GlobalVariablesNamespace.GlobalVariables.CVAPIKey]" CvMethod="ElementDetection, OCR" DesignTimeCacheId="ea1d8efe-0042-4c6b-88e4-ec4466b3d438" DisplayName="CV Screen Scope 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="532,528" sap2010:WorkflowViewState.IdRef="CVScope_8" SendOnPremData="False" UseLocalServer="True" Version="V5">
       <p:CVScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_13">
-            <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'United Kingdom' (385,833,87,15)&quot;]" DesignTimeCacheId="c3574e5a-54cf-44b6-98ac-7954afaa8307" DesignTimeScaleFactor="1" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="400,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="6882e698007405d8ca5de312117668f5" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="Down" TimeoutMS="90000" Version="V5">
+            <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'United Kingdom' (385,833,87,15)&quot;]" DesignTimeCacheId="c3574e5a-54cf-44b6-98ac-7954afaa8307" DesignTimeScaleFactor="1" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="6882e698007405d8ca5de312117668f5" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="Down" TimeoutMS="90000" Version="V5">
               <p:CvClickWithDescriptor.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -154,11 +153,14 @@
           </Sequence>
         </ActivityAction>
       </p:CVScope.Body>
+      <p:CVScope.DesignTimeCache>
+        <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+      </p:CVScope.DesignTimeCache>
       <p:CVScope.DesignTimeCacheContainer>
         <uc:CvCacheContainer>
           <uc:CvCacheContainer.Caches>
             <scg:List x:TypeArguments="uc:CVCache" Capacity="2">
-              <uc:CVCache DataSent="False" DisplayName="Main Screen" Id="ea1d8efe-0042-4c6b-88e4-ec4466b3d438" InformativeScreenshot="05438ac9085dff7c01a981ee03e5f33b" LogicalPosition="8, 32" OcrText="FRB The Fed - Foreign Exchange Rate X + v = X&#xD;&#xA;federalreserve.gov/releases/h10/hist/default.htm G&#xD;&#xA;Stay Connected Recent Postings Calendar Publications Site Map A-Z index - Careers FAQs Videos - Contact Search Advanced&#xD;&#xA;Board of Governors of the Federal Reserve System&#xD;&#xA;The Federal Reserve, the central bank of the United States, provides the nation with a&#xD;&#xA;safe,flexible, and stable monetary and financial&#xD;&#xA;system.&#xD;&#xA;About News Monetary Supervision Financial Payment Economic Data Consumers&#xD;&#xA;the Fed &amp; Events Policy &amp; Regulation Stability Systems Research &amp; Communities&#xD;&#xA;Home &gt; Data&#xD;&#xA;Foreign Exchange Rates - H.10&#xD;&#xA;Current Release Release Dates Country Data Nominal/Real Indexes Currency Weights G.5 G.5A About Announcements Technical Q&amp;As&#xD;&#xA;Bilateral exchange rate data are updated every Monday at 4:15 p.m. Data are available up through Friday of the previous business week.&#xD;&#xA;The following exchange rates are certified by the Federal Reserve Bank of New York for customs purposes as required by section 522 of the amended Tariff Act&#xD;&#xA;of 1930. These rates are also those required by the SEC for the integrated disclosure system for foreign private issuers. The information is based on data&#xD;&#xA;collected by the Federal Reserve Bank of New York from a sample of market participants.&#xD;&#xA;The data are noon buying rates in New York for cable transfers payable in foreign currencies.&#xD;&#xA;Effective June 24, 2019, the Federal Reserve Board staff will make a change to the indexation of the daily Broad, AFE, and EME dollar indexes. For more&#xD;&#xA;information, see the &quot;Technical Q&amp;As&quot;&#xD;&#xA;2000 to Present Go&#xD;&#xA;Foreign Exchange Rates Country Monetary unit&#xD;&#xA;Australia Dolfar&#xD;&#xA;Brazil Real&#xD;&#xA;Canada Doltar&#xD;&#xA;China, P.R. Yuan&#xD;&#xA;Denmark Krone&#xD;&#xA;EMU member countries Euro&#xD;&#xA;Greece Drachma&#xD;&#xA;Hong Kong Dollar&#xD;&#xA;India Rupee 17:15&#xD;&#xA;Type here to search o e S y 100% # 27°C Sunny lr ti) 29-01-2023 18" Position="8, 32">
+              <uc:CVCache DataSent="False" DisplayName="Main Screen" Id="ea1d8efe-0042-4c6b-88e4-ec4466b3d438" InformativeScreenshot="05438ac9085dff7c01a981ee03e5f33b" LogicalPosition="8, 32" OcrText="FRB The Fed - Foreign Exchange Rate X + v = X&#xA;federalreserve.gov/releases/h10/hist/default.htm G&#xA;Stay Connected Recent Postings Calendar Publications Site Map A-Z index - Careers FAQs Videos - Contact Search Advanced&#xA;Board of Governors of the Federal Reserve System&#xA;The Federal Reserve, the central bank of the United States, provides the nation with a&#xA;safe,flexible, and stable monetary and financial&#xA;system.&#xA;About News Monetary Supervision Financial Payment Economic Data Consumers&#xA;the Fed &amp; Events Policy &amp; Regulation Stability Systems Research &amp; Communities&#xA;Home &gt; Data&#xA;Foreign Exchange Rates - H.10&#xA;Current Release Release Dates Country Data Nominal/Real Indexes Currency Weights G.5 G.5A About Announcements Technical Q&amp;As&#xA;Bilateral exchange rate data are updated every Monday at 4:15 p.m. Data are available up through Friday of the previous business week.&#xA;The following exchange rates are certified by the Federal Reserve Bank of New York for customs purposes as required by section 522 of the amended Tariff Act&#xA;of 1930. These rates are also those required by the SEC for the integrated disclosure system for foreign private issuers. The information is based on data&#xA;collected by the Federal Reserve Bank of New York from a sample of market participants.&#xA;The data are noon buying rates in New York for cable transfers payable in foreign currencies.&#xA;Effective June 24, 2019, the Federal Reserve Board staff will make a change to the indexation of the daily Broad, AFE, and EME dollar indexes. For more&#xA;information, see the &quot;Technical Q&amp;As&quot;&#xA;2000 to Present Go&#xA;Foreign Exchange Rates Country Monetary unit&#xA;Australia Dolfar&#xA;Brazil Real&#xA;Canada Doltar&#xA;China, P.R. Yuan&#xA;Denmark Krone&#xA;EMU member countries Euro&#xA;Greece Drachma&#xA;Hong Kong Dollar&#xA;India Rupee 17:15&#xA;Type here to search o e S y 100% # 27°C Sunny lr ti) 29-01-2023 18" Position="8, 32">
                 <uc:CVCache.CvAnchorRelations>
                   <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
                 </uc:CVCache.CvAnchorRelations>
@@ -605,7 +607,7 @@
                   </scg:List>
                 </uc:CVCache.OcrTexts>
               </uc:CVCache>
-              <uc:CVCache DataSent="False" DisplayName="Screen CV Click - 'United King" Id="c3574e5a-54cf-44b6-98ac-7954afaa8307" InformativeScreenshot="fc22de37450a2a383be9088fb4b8e088" LogicalPosition="8, 32" OcrText="FRB The Fed - Foreign Exchange Rate X + v = X&#xD;&#xA;federalreserve.gov/releases/h10/hist/default.htm G&#xD;&#xA;Stay Connected Recent Postings Calendar Publications Site Map A-Z index - Careers FAQs - Videos - Contact Search Advanced&#xD;&#xA;About News Monetary Supervision Financial Payment Economic Data Consumers&#xD;&#xA;the Fed &amp; Events Policy &amp; Regulation Stability Systems Research &amp; Communities&#xD;&#xA;Current Release Release Dates Country Data Nominal/Real Indexes Currency Weights G.5 G.5A About Announcements Technical Q&amp;As&#xD;&#xA;Country Monetary unit&#xD;&#xA;Australia Dolfar&#xD;&#xA;Brazil Real&#xD;&#xA;Canada Dollar&#xD;&#xA;China, P.R. Yuan&#xD;&#xA;Denmark Krone&#xD;&#xA;EMU member countries Euro&#xD;&#xA;Greece Drachma&#xD;&#xA;Hong Kong Dolfar&#xD;&#xA;India Rupee&#xD;&#xA;Japan Yen&#xD;&#xA;Malaysia Ringgit&#xD;&#xA;Mexico Peso&#xD;&#xA;New Zealand Dolfar&#xD;&#xA;Norway Krone&#xD;&#xA;Singapore Dollar&#xD;&#xA;South Africa Rand&#xD;&#xA;South Korea Won&#xD;&#xA;Sri Lanka Rupee&#xD;&#xA;Sweden Krona&#xD;&#xA;Switzerland Franc&#xD;&#xA;Taiwan Doltar&#xD;&#xA;Thailand Baht&#xD;&#xA;United Kingdom Pound&#xD;&#xA;Venezuela Bolivar&#xD;&#xA;Note: Based on information we received from the Federal Reserve Bank of New York, revisions were applied in October 2004 to the exchange rate of the&#xD;&#xA;dollar against both the Hong Kong Dollar and the Chinese Yuan for several days between 1999 and 2003. Please refer to the following link for a list of these&#xD;&#xA;days and for the size of the revisions: http://www.newyorkfed.org/markets/fxrates/revisions.html l" Position="8, 32">
+              <uc:CVCache DataSent="False" DisplayName="Screen CV Click - 'United King" Id="c3574e5a-54cf-44b6-98ac-7954afaa8307" InformativeScreenshot="fc22de37450a2a383be9088fb4b8e088" LogicalPosition="8, 32" OcrText="FRB The Fed - Foreign Exchange Rate X + v = X&#xA;federalreserve.gov/releases/h10/hist/default.htm G&#xA;Stay Connected Recent Postings Calendar Publications Site Map A-Z index - Careers FAQs - Videos - Contact Search Advanced&#xA;About News Monetary Supervision Financial Payment Economic Data Consumers&#xA;the Fed &amp; Events Policy &amp; Regulation Stability Systems Research &amp; Communities&#xA;Current Release Release Dates Country Data Nominal/Real Indexes Currency Weights G.5 G.5A About Announcements Technical Q&amp;As&#xA;Country Monetary unit&#xA;Australia Dolfar&#xA;Brazil Real&#xA;Canada Dollar&#xA;China, P.R. Yuan&#xA;Denmark Krone&#xA;EMU member countries Euro&#xA;Greece Drachma&#xA;Hong Kong Dolfar&#xA;India Rupee&#xA;Japan Yen&#xA;Malaysia Ringgit&#xA;Mexico Peso&#xA;New Zealand Dolfar&#xA;Norway Krone&#xA;Singapore Dollar&#xA;South Africa Rand&#xA;South Korea Won&#xA;Sri Lanka Rupee&#xA;Sweden Krona&#xA;Switzerland Franc&#xA;Taiwan Doltar&#xA;Thailand Baht&#xA;United Kingdom Pound&#xA;Venezuela Bolivar&#xA;Note: Based on information we received from the Federal Reserve Bank of New York, revisions were applied in October 2004 to the exchange rate of the&#xA;dollar against both the Hong Kong Dollar and the Chinese Yuan for several days between 1999 and 2003. Please refer to the following link for a list of these&#xA;days and for the size of the revisions: http://www.newyorkfed.org/markets/fxrates/revisions.html l" Position="8, 32">
                 <uc:CVCache.CvAnchorRelations>
                   <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
                 </uc:CVCache.CvAnchorRelations>
@@ -914,7 +916,7 @@
           <ActivityFunc.Argument>
             <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
           </ActivityFunc.Argument>
-          <p1:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[CVAPIKey]" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_8" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
+          <p1:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[GlobalVariablesNamespace.GlobalVariables.CVAPIKey]" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_8" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
         </ActivityFunc>
       </p:CVScope.OCREngine>
       <p:CVScope.Target>
@@ -925,22 +927,22 @@
         </ui:Target>
       </p:CVScope.Target>
     </p:CVScope>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,834" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,837" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,755" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,758" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" ApiKey="[CVAPIKey]" CvMethod="ElementDetection, OCR" DesignTimeCacheId="73edd466-0e06-47fd-a2f6-4034886f3ade" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="434,644" sap2010:WorkflowViewState.IdRef="CVScope_6" SendOnPremData="False" UseLocalServer="True" Version="V5">
+          <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" ApiKey="[GlobalVariablesNamespace.GlobalVariables.CVAPIKey]" CvMethod="ElementDetection, OCR" DesignTimeCacheId="73edd466-0e06-47fd-a2f6-4034886f3ade" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="434,647" sap2010:WorkflowViewState.IdRef="CVScope_6" SendOnPremData="False" UseLocalServer="True" Version="V5">
             <p:CVScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
                 </ActivityAction.Argument>
                 <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                  <p:CvExtractDataTableWithDescriptor InRegion="{x:Null}" AddHeaders="True" DelayScreenshotAfterScroll="250" Descriptor="[&quot;Target: Table (336,623,885,177)&quot;]" DesignTimeCacheId="73edd466-0e06-47fd-a2f6-4034886f3ade" DesignTimeScaleFactor="1" DisplayName="CV Extract Table - Table" sap:VirtualizedContainerService.HintSize="400,190" sap2010:WorkflowViewState.IdRef="CvExtractDataTableWithDescriptor_6" IgnoreEmptyRows="False" InformativeScreenshot="d585f032a37efc99bed1a7734267325f" MaxTableScrollHeightInPixels="30000" NumberOfScrolls="2" RefreshBefore="True" Result="[ExtractDataTable]" Scroll="True" ScrollDirection="Down" Version="V5">
+                  <p:CvExtractDataTableWithDescriptor InRegion="{x:Null}" AddHeaders="True" DelayScreenshotAfterScroll="250" Descriptor="[&quot;Target: Table (336,623,885,177)&quot;]" DesignTimeCacheId="73edd466-0e06-47fd-a2f6-4034886f3ade" DesignTimeScaleFactor="1" DisplayName="CV Extract Table - Table" sap:VirtualizedContainerService.HintSize="400,192" sap2010:WorkflowViewState.IdRef="CvExtractDataTableWithDescriptor_6" IgnoreEmptyRows="False" InformativeScreenshot="d585f032a37efc99bed1a7734267325f" MaxTableScrollHeightInPixels="30000" NumberOfScrolls="2" RefreshBefore="True" Result="[ExtractDataTable]" Scroll="True" ScrollDirection="Down" Version="V5">
                     <p:CvExtractDataTableWithDescriptor.DesignTimeDescriptor>
                       <uc:CvDescriptor Id="57ada58d-8a02-463f-acc1-07565a0c5997">
                         <uc:CvDescriptor.Target>
@@ -949,7 +951,7 @@
                       </uc:CvDescriptor>
                     </p:CvExtractDataTableWithDescriptor.DesignTimeDescriptor>
                   </p:CvExtractDataTableWithDescriptor>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[ExtractDataTable.Rows.Count.ToString]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="400,91" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[ExtractDataTable.Rows.Count.ToString]" />
                 </Sequence>
               </ActivityAction>
             </p:CVScope.Body>
@@ -1365,7 +1367,7 @@
                 <ActivityFunc.Argument>
                   <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                 </ActivityFunc.Argument>
-                <p1:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[CVAPIKey]" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_6" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
+                <p1:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[GlobalVariablesNamespace.GlobalVariables.CVAPIKey]" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_6" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
               </ActivityFunc>
             </p:CVScope.OCREngine>
             <p:CVScope.Target>
@@ -1391,15 +1393,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,25" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,53" sap2010:WorkflowViewState.IdRef="CommentOut_3">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,136" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,164" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="338,25" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fb615389-b06f-4ed7-9b03-50a7d6f6b562" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="338,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fb615389-b06f-4ed7-9b03-50a7d6f6b562" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>

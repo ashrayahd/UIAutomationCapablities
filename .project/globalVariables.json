@@ -1,0 +1,10 @@
+[
+  {
+    "Constant": false,
+    "Name": "CVAPIKey",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"LzNyYaAQpTMIluVz/ROTSe++59md6bsqDWK5rSNX1KJv58PmmRFSlvXz2kQrCJ0H\"",
+    "IsLiteral": false
+  }
+]

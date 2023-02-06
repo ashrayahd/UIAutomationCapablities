@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="486,1255" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="772,1300" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -72,25 +72,25 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,1190" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,1235" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Enter your credentials to log in" sap:VirtualizedContainerService.HintSize="434,1079" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f6734072-4343-431f-a82e-cf024934a805" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Enter your credentials to log in" sap:VirtualizedContainerService.HintSize="434,1124" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f6734072-4343-431f-a82e-cf024934a805" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,788" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,791" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f6734072-4343-431f-a82e-cf024934a805" Text="admin" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f6734072-4343-431f-a82e-cf024934a805" Text="admin" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="203, 43, 136, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'WindowsForms10.EDIT.app…'" FullSelectorArgument="&lt;wnd ctrlname='txt_Username' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='txt_Username' /&gt;" Guid="fae01811-86b5-48dd-95ea-5aec8322e5ce" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAAYCAYAAAAoNxVrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVGhD7dLBCcAgAMDAzu3y9qVQUGj+d5AN8kwIDEOyhxljSNeWzzBwYhgSw5AYhsQwJIYhMQyJYUgMQ2IYEsOQGIbEMCSGITEMiWFIDENiGJLrMNKtZQ8DfxiGYM4Xp7RuYwP6Ns0AAAAASUVORK5CYII=" InformativeScreenshot="ea84f340e18e2ce49574bf02e36aeba2.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -101,7 +101,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f6734072-4343-431f-a82e-cf024934a805" Text="Password" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,219" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f6734072-4343-431f-a82e-cf024934a805" Text="Password" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="203, 69, 136, 20" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'WindowsForms10.EDIT.app…'" FullSelectorArgument="&lt;wnd ctrlname='txt_Password' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='txt_Password' /&gt;" Guid="1e15ec8a-838c-4892-8288-6b7ec4128780" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAAYCAYAAAAoNxVrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVGhD7dLBCcAgAMDAzu3y9qVQUGj+d5AN8kwIDEOyhxljSNeWzzBwYhgSw5AYhsQwJIYhMQyJYUgMQ2IYEsOQGIbEMCSGITEMiWFIDENiGJLrMNKtZQ8DfxiGYM4Xp7RuYwP6Ns0AAAAASUVORK5CYII=" InformativeScreenshot="e1f331ab9fb5752b41e6126ae9ae2b87.png" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -112,7 +112,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6734072-4343-431f-a82e-cf024934a805" Version="V3">
+            <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6734072-4343-431f-a82e-cf024934a805" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="203, 100, 71, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;wnd ctrlname='btn_Submit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='btn_Submit' check:text='Submit' /&gt;" Guid="81508b0b-1431-42e3-94f8-3fbad88a9830" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAbCAYAAAA0wHIdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFNSURBVGhD7ZaBsYMgDEDZKdtkGVZhAYdgFCfJD0IsUvQ3/RSv/5K7d2IAa56CdWTxcpgsRZgsRRxkLctiNNTxJGtdV6NgshSYLAUmS4HJUjBPVvQEzpFLAJAPnTFCGgueYq/vRibJCoSOBcVyvolDCk/jCu/Kknkfkj1Hlvbm/1rsV8taI3lwhD7wU6/ybVFyvh2REKEs2/IWNnng6/mtDYQhPvr5t/K8scImyWKiFJYKKUvySpYI4Hz0PA9D7q/nttdpj3LdQcyTVRED5qfeFnVWbC/fa/fGDeQWWXnD56XVFnVWbC/fa/fGDWSKrLyMHje/v1lFmnwlU34vts7Xy1Ak9NrtMfUNZNKbFSns+1XZsGsRZR9DrGUBt2V8I+Wsved4f9zmXvw9eYNJsv4HJkuByVJgshSYLAW/yjKO1HGQZXEdJksRJuvlIPoBAhw+G4qd/X0AAAAASUVORK5CYII=" InformativeScreenshot="e2dc03ab85aca3c085d68cc822b2e0d8.png" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -121,7 +121,7 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="78, 78, 357, 143" Arguments="v2" FilePath="C:\Users\ashraya.hd\Documents\UiPath\UIAutomaitonCapablities\UiBank Admin\uibankadmin.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANwSURBVFhH7ZdLKLRhFMfHZdyn3MtCImaHpFw2yKWmFBtZkZrcIiVFUiytFJENVjYWooQFG82ClI3rQkQaSm6lXBqGv/7n63mbad7vMy4fm3nqX9OZ87zn95zzPM97XoPT6cRv6ssALy8vunZv9WmA19dXPD4+4u7uTn7r+XijDwNwxQy4t7eHhoYGVFVVYXV1Vf77DMiHADhubm4wOjqKtLQ0GAwGUUJCAvr6+nB6eio+HymLVwBc2fPzM2w2G8rLyxEUFKQFV/L390deXh5mZ2fx8PDgdTb+CcCVcJycnKC7uxvx8fFawMTERDQ3N6OwsFCCK7vJZILVasXOzo5AvJeNvwJw8v39PaamppCdnQ0/Pz8tiNFoxMTEhMAdHR0hPT1d+08pNTUVw8PDuL6+Fj+9GJQHAImpzc1N1NbWIjw83OPhwcHBmJmZkQdfXV0hNzfXw4ciqMViwcrKipRQryxuAHS4uLjAwMAAkpOTdR+qlJWVhZGREUm33p5wVVxcHDo7O3F8fOxRFgGggTu4t7dXahoYGKj7oK+IJSR0R0cHdnd3tWwIAAdTHhsbqzv5O8Vszc3NSUwNgDSHh4dyxEJDQ3Unfoe4J/Lz87G2tuYOQHGTnJ+fo7+/H8XFxTIhKioK9fX1aGtrQ0pKitgyMjLQ3t6OmpoageURrKyslNQWFBSID2ve1NSE1tZWOa608ST19PTg4OBAYqm4bpuQe4FjfHxcJpnNZtkbT09PqKioEFtLS4v48JwzEFe1sLAgtqGhIfHJzMzE5eWlXEglJSVi6+rqEh/XDUi5AVAcY2NjGoDdbofD4fAA2N7e1gDm5+fFNjg4qAHwNPEeUQA8Be8eQ4rDB+AD8AH4AH4dgN2OAjg7O5O7WwHwfufgK1UBLC4uis31Kmajwra9tLRUbF5dxVzp/v6+9AWclJSUhKWlJWxsbKCoqEhs1dXV2NrawvT0tLys2DuwMSEQV0kfgrMLWl9f17qluro6eX8wKx4NCcVBB9KHhYXJpICAAAkSHR2tdT0hISGIiYlBZGSk1oyyEaVNtW+u85ghNY8LWl5ellgKQgCYYq40JyfHrfn8H+L3xOTkpJSHEAZuDNb8J7ohJWaYHzIsuWSgsbFRUhwREfEjYlddVlaG29vbPwDsB3mUuJt/Qmxg2JY5HA68AUFvy9bnYFIWAAAAAElFTkSuQmCC" InformativeScreenshot="e4afe757ed720d215f85d04e2f4d11a6.png" Selector="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" />
+        <uix:TargetApp Area="78, 78, 357, 143" FilePath="UiBank Admin\uibankadmin.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANwSURBVFhH7ZdLKLRhFMfHZdyn3MtCImaHpFw2yKWmFBtZkZrcIiVFUiytFJENVjYWooQFG82ClI3rQkQaSm6lXBqGv/7n63mbad7vMy4fm3nqX9OZ87zn95zzPM97XoPT6cRv6ssALy8vunZv9WmA19dXPD4+4u7uTn7r+XijDwNwxQy4t7eHhoYGVFVVYXV1Vf77DMiHADhubm4wOjqKtLQ0GAwGUUJCAvr6+nB6eio+HymLVwBc2fPzM2w2G8rLyxEUFKQFV/L390deXh5mZ2fx8PDgdTb+CcCVcJycnKC7uxvx8fFawMTERDQ3N6OwsFCCK7vJZILVasXOzo5AvJeNvwJw8v39PaamppCdnQ0/Pz8tiNFoxMTEhMAdHR0hPT1d+08pNTUVw8PDuL6+Fj+9GJQHAImpzc1N1NbWIjw83OPhwcHBmJmZkQdfXV0hNzfXw4ciqMViwcrKipRQryxuAHS4uLjAwMAAkpOTdR+qlJWVhZGREUm33p5wVVxcHDo7O3F8fOxRFgGggTu4t7dXahoYGKj7oK+IJSR0R0cHdnd3tWwIAAdTHhsbqzv5O8Vszc3NSUwNgDSHh4dyxEJDQ3Unfoe4J/Lz87G2tuYOQHGTnJ+fo7+/H8XFxTIhKioK9fX1aGtrQ0pKitgyMjLQ3t6OmpoageURrKyslNQWFBSID2ve1NSE1tZWOa608ST19PTg4OBAYqm4bpuQe4FjfHxcJpnNZtkbT09PqKioEFtLS4v48JwzEFe1sLAgtqGhIfHJzMzE5eWlXEglJSVi6+rqEh/XDUi5AVAcY2NjGoDdbofD4fAA2N7e1gDm5+fFNjg4qAHwNPEeUQA8Be8eQ4rDB+AD8AH4AH4dgN2OAjg7O5O7WwHwfufgK1UBLC4uis31Kmajwra9tLRUbF5dxVzp/v6+9AWclJSUhKWlJWxsbKCoqEhs1dXV2NrawvT0tLys2DuwMSEQV0kfgrMLWl9f17qluro6eX8wKx4NCcVBB9KHhYXJpICAAAkSHR2tdT0hISGIiYlBZGSk1oyyEaVNtW+u85ghNY8LWl5ellgKQgCYYq40JyfHrfn8H+L3xOTkpJSHEAZuDNb8J7ohJWaYHzIsuWSgsbFRUhwREfEjYlddVlaG29vbPwDsB3mUuJt/Qmxg2JY5HA68AUFvy9bnYFIWAAAAAElFTkSuQmCC" InformativeScreenshot="e4afe757ed720d215f85d04e2f4d11a6.png" Selector="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

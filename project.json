@@ -3,12 +3,12 @@
   "description": "A demo to showcase various UI autoamtion capablities of UiPath Platform",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComputerVision.LocalServer": "[22.12.0-beta.3406281]",
-    "UiPath.Excel.Activities": "[2.16.1]",
+    "UiPath.ComputerVision.LocalServer": "[22.7.2]",
+    "UiPath.Excel.Activities": "[2.16.2]",
     "UiPath.Mail.Activities": "[1.18.2]",
     "UiPath.System.Activities": "[22.10.4]",
-    "UiPath.Testing.Activities": "[22.10.2]",
-    "UiPath.UIAutomation.Activities": "[22.10.4]"
+    "UiPath.Testing.Activities": "[22.10.3]",
+    "UiPath.UIAutomation.Activities": "[22.10.5]"
   },
   "webServices": [],
   "entitiesStores": [],
