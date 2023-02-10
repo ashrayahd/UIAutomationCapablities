@@ -1,0 +1,666 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CvPassport" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="894,1957" sap2010:WorkflowViewState.IdRef="CvPassport_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CvPassport" sap:VirtualizedContainerService.HintSize="592,1812" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: GammaDelta Airlines" sap:VirtualizedContainerService.HintSize="530,1701" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="a88968ab-52ad-407e-ab51-ebd4c356f71c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1483" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="a1b0f491-d0f0-4474-91e1-63b2006ba32a" DisplayName="CV Screen Scope 'IMG'" sap:VirtualizedContainerService.HintSize="434,1368" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" UseLocalServer="True" Version="V5">
+              <p:CVScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (300,172,291,44)&quot; +&#xD;&#xA;&quot;Anchor: Text 'Firstname' (303,149,73,13)&quot;]" DesignTimeCacheId="d1c6cc62-54a9-42f2-bc67-656340e8f940" DesignTimeScaleFactor="2" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_1" InformativeScreenshot="e758ce197b48d404da909c4c5fc48a0a" NumberOfScrolls="2" ScrollDirection="None" Text="[&quot;Charles&quot;]" Version="V5">
+                      <p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="24f4f83e-e21f-408c-8885-c7a586a8e194">
+                          <uc:CvDescriptor.Anchors>
+                            <x:Array Type="uc:CvElementDescriptor">
+                              <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="303, 149, 73, 13" ElementType="Text" Text="Firstname" />
+                            </x:Array>
+                          </uc:CvDescriptor.Anchors>
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="300, 172, 291, 44" ElementType="InputBox" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                      <p:CvTypeIntoWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="597be6e1-4e62-4790-8c92-8a3927013036">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvTypeIntoWithDescriptor.Target>
+                    </p:CvTypeIntoWithDescriptor>
+                    <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (624,171,297,44)&quot; +&#xD;&#xA;&quot;Anchor: Text 'Lastname' (627,149,71,13)&quot;]" DesignTimeCacheId="d1c6cc62-54a9-42f2-bc67-656340e8f940" DesignTimeScaleFactor="2" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_2" InformativeScreenshot="4620d63f5ef4cbb7a38d308a80dbe19a" NumberOfScrolls="2" ScrollDirection="None" Text="[&quot;Kim&quot;]" Version="V5">
+                      <p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="facde549-4433-47f6-8804-a7d5e652c5ee">
+                          <uc:CvDescriptor.Anchors>
+                            <x:Array Type="uc:CvElementDescriptor">
+                              <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="627, 149, 71, 13" ElementType="Text" Text="Lastname" />
+                            </x:Array>
+                          </uc:CvDescriptor.Anchors>
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="624, 171, 297, 44" ElementType="InputBox" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                      <p:CvTypeIntoWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="716814fb-f54f-40d7-be32-4cdfb265d4c8">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvTypeIntoWithDescriptor.Target>
+                    </p:CvTypeIntoWithDescriptor>
+                    <p:CvSelectItemWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (624,490,295,44)&quot; +&#xD;&#xA;&quot;Anchor: Text 'Country/Region of Residence' (627,466,207,16)&quot;]" DesignTimeCacheId="d1c6cc62-54a9-42f2-bc67-656340e8f940" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - InputBox" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_1" InformativeScreenshot="cd5023f72cbbf68125e3b094a57b84d8" NumberOfScrolls="1" ScrollDirection="Down" Text="[&quot;Singapore&quot;]" Version="V5">
+                      <p:CvSelectItemWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="416de85a-3b0c-49d7-b696-d80482f2c0d3">
+                          <uc:CvDescriptor.Anchors>
+                            <x:Array Type="uc:CvElementDescriptor">
+                              <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="627, 466, 207, 16" ElementType="Text" Text="Country/Region of Residence" />
+                            </x:Array>
+                          </uc:CvDescriptor.Anchors>
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="624, 490, 295, 44" ElementType="InputBox" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvSelectItemWithDescriptor.DesignTimeDescriptor>
+                      <p:CvSelectItemWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="242ffc9c-5059-444c-ac09-daa994f3722a">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvSelectItemWithDescriptor.Target>
+                    </p:CvSelectItemWithDescriptor>
+                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'Singapore (SGP)' (311,573,107,16)&quot;]" DesignTimeCacheId="9a2ae7f4-b06a-4d6c-9a2d-c9d0e0644256" DesignTimeScaleFactor="2" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="b89fe1a8310c7023590fabe786eb6686" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="1" ScrollDirection="Down" Version="V5">
+                      <p:CvClickWithDescriptor.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </p:CvClickWithDescriptor.CursorPosition>
+                      <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="843f71e5-b5a2-4e8c-a4a2-9fe2836fc7be">
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="311, 573, 107, 16" ElementType="Text" Text="Singapore (SGP)" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                      <p:CvClickWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e0984dc7-81d6-45b9-93cf-6b9fb3b34d09">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvClickWithDescriptor.Target>
+                    </p:CvClickWithDescriptor>
+                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'Save' (777,686,34,13)&quot;]" DesignTimeCacheId="d1c6cc62-54a9-42f2-bc67-656340e8f940" DesignTimeScaleFactor="2" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_3" InformativeScreenshot="b69fc8fe717ed3fe29e2e9e7871d126b" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V5">
+                      <p:CvClickWithDescriptor.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </p:CvClickWithDescriptor.CursorPosition>
+                      <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="5cf6550b-2b52-4534-9316-5f5c0c46a13e">
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="777, 686, 34, 13" ElementType="Text" Text="Save" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                      <p:CvClickWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d93cf69f-e371-4cba-a342-441e6bbaf2aa">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvClickWithDescriptor.Target>
+                    </p:CvClickWithDescriptor>
+                  </Sequence>
+                </ActivityAction>
+              </p:CVScope.Body>
+              <p:CVScope.DesignTimeCacheContainer>
+                <uc:CvCacheContainer>
+                  <uc:CvCacheContainer.Caches>
+                    <scg:List x:TypeArguments="uc:CVCache" Capacity="4">
+                      <uc:CVCache DataSent="False" DisplayName="Screen CV Type Into - 'Firstna " Id="d1c6cc62-54a9-42f2-bc67-656340e8f940" InformativeScreenshot="468fa3e6cad05337e4f53bdffae43149" LogicalPosition="1097, 278" OcrText="Menu Passport Info&#xD;&#xA;Please enter your information exactly as it appears on your passport and then verify it&#xD;&#xA;My Trips for future use at a kiosk or on the app.&#xD;&#xA;Passport info Firstname Lastname&#xD;&#xA;Receipts&#xD;&#xA;Contact Gender Date of Birth&#xD;&#xA;V MM/dd/yyyy&#xD;&#xA;Expiration date Passport #&#xD;&#xA;MM/dd/yyyy&#xD;&#xA;Place of birth Country/Region of Residence V&#xD;&#xA;This constitutes consent to store and use your identification data as described in Privacy Policy. When booking a&#xD;&#xA;reservation, this information is required for compliance with U.S. and foreign government regulatory programs,&#xD;&#xA;including TSA Secure Flight. If you decide at any time to stop saving your Secure Flight Passenger Data, please&#xD;&#xA;remove record. Save Cancel" Position="1097, 278" ScaleFactor="2">
+                        <uc:CVCache.CvAnchorRelations>
+                          <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                        </uc:CVCache.CvAnchorRelations>
+                        <uc:CVCache.CvUiElements>
+                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="32">
+                            <uc:CvElementInfo Category="InputBox" Region="300, 172, 291, 44" />
+                            <uc:CvElementInfo Category="Icon" Region="558, 393, 23, 24" />
+                            <uc:CvElementInfo Category="Icon" Region="883, 287, 23, 24" />
+                            <uc:CvElementInfo Category="InputBox" Region="299, 490, 297, 44" />
+                            <uc:CvElementInfo Category="InputBox" Region="624, 171, 297, 44" />
+                            <uc:CvElementInfo Category="InputBox" Region="625, 383, 295, 45" />
+                            <uc:CvElementInfo Category="InputBox" Region="298, 383, 295, 44" />
+                            <uc:CvElementInfo Category="InputBox" Region="624, 277, 291, 44" />
+                            <uc:CvElementInfo Category="Button" Region="759, 672, 69, 43" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="690, 359, 15, 16" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="34, 87, 209, 196" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="624, 278, 290, 43" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="38, 32, 200, 72" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="758, 671, 76, 44" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="41, 129, 32, 46" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="48, 120, 195, 58" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="761, 669, 71, 49" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="49, 127, 15, 48" />
+                            <uc:CvElementInfo Category="InputBox" Region="301, 277, 293, 45" />
+                            <uc:CvElementInfo Category="InputBox" Region="624, 490, 295, 44" />
+                            <uc:CvElementInfo Category="ArrowButton" Region="879, 499, 23, 24" />
+                            <uc:CvElementInfo Category="ArrowButton" Region="554, 285, 27, 29" />
+                          </scg:List>
+                        </uc:CVCache.CvUiElements>
+                        <uc:CVCache.OcrTexts>
+                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="109">
+                            <uc:OcrTextInfo Region="73, 53, 47, 15" Text="Menu" />
+                            <uc:OcrTextInfo Region="306, 55, 71, 18" Text="Passport" />
+                            <uc:OcrTextInfo Region="380, 54, 34, 15" Text="Info" />
+                            <uc:OcrTextInfo Region="305, 84, 45, 14" Text="Please" />
+                            <uc:OcrTextInfo Region="353, 86, 38, 12" Text="enter" />
+                            <uc:OcrTextInfo Region="393, 87, 33, 14" Text="your" />
+                            <uc:OcrTextInfo Region="429, 84, 82, 14" Text="information" />
+                            <uc:OcrTextInfo Region="514, 84, 49, 17" Text="exactly" />
+                            <uc:OcrTextInfo Region="566, 87, 16, 10" Text="as" />
+                            <uc:OcrTextInfo Region="585, 85, 10, 13" Text="it" />
+                            <uc:OcrTextInfo Region="597, 87, 57, 15" Text="appears" />
+                            <uc:OcrTextInfo Region="657, 88, 18, 10" Text="on" />
+                            <uc:OcrTextInfo Region="678, 87, 34, 14" Text="your" />
+                            <uc:OcrTextInfo Region="714, 86, 62, 16" Text="passport" />
+                            <uc:OcrTextInfo Region="778, 84, 27, 14" Text="and" />
+                            <uc:OcrTextInfo Region="808, 84, 32, 14" Text="then" />
+                            <uc:OcrTextInfo Region="843, 84, 39, 17" Text="verify" />
+                            <uc:OcrTextInfo Region="885, 84, 10, 14" Text="it" />
+                            <uc:OcrTextInfo Region="71, 103, 22, 16" Text="My" />
+                            <uc:OcrTextInfo Region="94, 102, 35, 17" Text="Trips" />
+                            <uc:OcrTextInfo Region="305, 105, 21, 14" Text="for" />
+                            <uc:OcrTextInfo Region="329, 105, 43, 14" Text="future" />
+                            <uc:OcrTextInfo Region="375, 108, 25, 11" Text="use" />
+                            <uc:OcrTextInfo Region="403, 107, 14, 12" Text="at" />
+                            <uc:OcrTextInfo Region="420, 108, 8, 10" Text="a" />
+                            <uc:OcrTextInfo Region="433, 105, 36, 14" Text="kiosk" />
+                            <uc:OcrTextInfo Region="471, 108, 16, 10" Text="or" />
+                            <uc:OcrTextInfo Region="490, 108, 19, 11" Text="on" />
+                            <uc:OcrTextInfo Region="511, 105, 24, 14" Text="the" />
+                            <uc:OcrTextInfo Region="538, 108, 31, 14" Text="app." />
+                            <uc:OcrTextInfo Region="75, 144, 65, 17" Text="Passport" />
+                            <uc:OcrTextInfo Region="143, 144, 30, 13" Text="info" />
+                            <uc:OcrTextInfo Region="303, 149, 73, 13" Text="Firstname" />
+                            <uc:OcrTextInfo Region="627, 149, 71, 13" Text="Lastname" />
+                            <uc:OcrTextInfo Region="71, 187, 58, 16" Text="Receipts" />
+                            <uc:OcrTextInfo Region="71, 228, 54, 13" Text="Contact" />
+                            <uc:OcrTextInfo Region="303, 255, 53, 13" Text="Gender" />
+                            <uc:OcrTextInfo Region="627, 255, 34, 13" Text="Date" />
+                            <uc:OcrTextInfo Region="664, 255, 16, 13" Text="of" />
+                            <uc:OcrTextInfo Region="683, 255, 35, 13" Text="Birth" />
+                            <uc:OcrTextInfo Region="560, 295, 13, 10" Text="V" />
+                            <uc:OcrTextInfo Region="644, 292, 87, 18" Text="MM/dd/yyyy" />
+                            <uc:OcrTextInfo Region="303, 360, 73, 17" Text="Expiration" />
+                            <uc:OcrTextInfo Region="379, 361, 33, 13" Text="date" />
+                            <uc:OcrTextInfo Region="627, 361, 63, 17" Text="Passport" />
+                            <uc:OcrTextInfo Region="692, 361, 11, 13" Text="#" />
+                            <uc:OcrTextInfo Region="320, 399, 87, 17" Text="MM/dd/yyyy" />
+                            <uc:OcrTextInfo Region="303, 467, 38, 13" Text="Place" />
+                            <uc:OcrTextInfo Region="344, 467, 16, 13" Text="of" />
+                            <uc:OcrTextInfo Region="362, 466, 35, 14" Text="birth" />
+                            <uc:OcrTextInfo Region="627, 467, 113, 16" Text="Country/Region" />
+                            <uc:OcrTextInfo Region="743, 467, 16, 13" Text="of" />
+                            <uc:OcrTextInfo Region="762, 466, 72, 14" Text="Residence" />
+                            <uc:OcrTextInfo Region="884, 507, 14, 10" Text="V" />
+                            <uc:OcrTextInfo Region="304, 564, 24, 11" Text="This" />
+                            <uc:OcrTextInfo Region="330, 564, 60, 10" Text="constitutes" />
+                            <uc:OcrTextInfo Region="393, 564, 44, 10" Text="consent" />
+                            <uc:OcrTextInfo Region="438, 564, 12, 10" Text="to" />
+                            <uc:OcrTextInfo Region="452, 564, 28, 10" Text="store" />
+                            <uc:OcrTextInfo Region="483, 564, 21, 11" Text="and" />
+                            <uc:OcrTextInfo Region="507, 566, 19, 9" Text="use" />
+                            <uc:OcrTextInfo Region="528, 566, 26, 11" Text="your" />
+                            <uc:OcrTextInfo Region="556, 564, 71, 11" Text="identification" />
+                            <uc:OcrTextInfo Region="630, 564, 25, 11" Text="data" />
+                            <uc:OcrTextInfo Region="657, 566, 13, 9" Text="as" />
+                            <uc:OcrTextInfo Region="672, 563, 54, 11" Text="described" />
+                            <uc:OcrTextInfo Region="728, 564, 11, 10" Text="in" />
+                            <uc:OcrTextInfo Region="741, 564, 40, 13" Text="Privacy" />
+                            <uc:OcrTextInfo Region="783, 564, 33, 13" Text="Policy." />
+                            <uc:OcrTextInfo Region="818, 564, 33, 11" Text="When" />
+                            <uc:OcrTextInfo Region="854, 564, 45, 13" Text="booking" />
+                            <uc:OcrTextInfo Region="901, 566, 7, 9" Text="a" />
+                            <uc:OcrTextInfo Region="305, 584, 65, 13" Text="reservation," />
+                            <uc:OcrTextInfo Region="371, 584, 21, 11" Text="this" />
+                            <uc:OcrTextInfo Region="395, 584, 65, 11" Text="information" />
+                            <uc:OcrTextInfo Region="462, 584, 9, 11" Text="is" />
+                            <uc:OcrTextInfo Region="474, 585, 46, 13" Text="required" />
+                            <uc:OcrTextInfo Region="523, 585, 16, 11" Text="for" />
+                            <uc:OcrTextInfo Region="541, 585, 62, 13" Text="compliance" />
+                            <uc:OcrTextInfo Region="605, 585, 25, 11" Text="with" />
+                            <uc:OcrTextInfo Region="632, 585, 21, 10" Text="U.S." />
+                            <uc:OcrTextInfo Region="656, 585, 21, 11" Text="and" />
+                            <uc:OcrTextInfo Region="679, 585, 40, 13" Text="foreign" />
+                            <uc:OcrTextInfo Region="722, 586, 68, 12" Text="government" />
+                            <uc:OcrTextInfo Region="791, 584, 57, 14" Text="regulatory" />
+                            <uc:OcrTextInfo Region="851, 587, 56, 11" Text="programs," />
+                            <uc:OcrTextInfo Region="305, 606, 51, 13" Text="including" />
+                            <uc:OcrTextInfo Region="357, 606, 22, 11" Text="TSA" />
+                            <uc:OcrTextInfo Region="381, 606, 37, 11" Text="Secure" />
+                            <uc:OcrTextInfo Region="421, 606, 33, 13" Text="Flight." />
+                            <uc:OcrTextInfo Region="456, 606, 10, 11" Text="If" />
+                            <uc:OcrTextInfo Region="467, 608, 21, 11" Text="you" />
+                            <uc:OcrTextInfo Region="490, 605, 36, 11" Text="decide" />
+                            <uc:OcrTextInfo Region="529, 607, 12, 10" Text="at" />
+                            <uc:OcrTextInfo Region="542, 608, 21, 11" Text="any" />
+                            <uc:OcrTextInfo Region="565, 606, 25, 11" Text="time" />
+                            <uc:OcrTextInfo Region="592, 607, 12, 10" Text="to" />
+                            <uc:OcrTextInfo Region="606, 606, 24, 13" Text="stop" />
+                            <uc:OcrTextInfo Region="633, 606, 36, 13" Text="saving" />
+                            <uc:OcrTextInfo Region="670, 608, 26, 11" Text="your" />
+                            <uc:OcrTextInfo Region="699, 606, 37, 11" Text="Secure" />
+                            <uc:OcrTextInfo Region="738, 606, 31, 13" Text="Flight" />
+                            <uc:OcrTextInfo Region="771, 606, 57, 13" Text="Passenger" />
+                            <uc:OcrTextInfo Region="831, 606, 29, 12" Text="Data," />
+                            <uc:OcrTextInfo Region="862, 605, 36, 14" Text="please" />
+                            <uc:OcrTextInfo Region="305, 629, 41, 9" Text="remove" />
+                            <uc:OcrTextInfo Region="349, 627, 39, 11" Text="record." />
+                            <uc:OcrTextInfo Region="777, 686, 34, 13" Text="Save" />
+                            <uc:OcrTextInfo Region="852, 686, 48, 14" Text="Cancel" />
+                          </scg:List>
+                        </uc:CVCache.OcrTexts>
+                      </uc:CVCache>
+                      <uc:CVCache DataSent="False" DisplayName="Screen CV Click - 'Singapore (" Id="9a2ae7f4-b06a-4d6c-9a2d-c9d0e0644256" InformativeScreenshot="d617a8c5018c523614f1613b4930b88d" LogicalPosition="1097, 278" OcrText="Passport Info&#xD;&#xA;Please enter your information exactly as it appears on your passport and then&#xD;&#xA;verify it for future use at a kiosk or on the app.&#xD;&#xA;Firstname Lastname&#xD;&#xA;Charles Kim&#xD;&#xA;Gender Date of Birth&#xD;&#xA;v MM/dd/yyyy&#xD;&#xA;Expiration date Passport #&#xD;&#xA;MM/dd/yyyy&#xD;&#xA;Place of birth Country/Region of Residence&#xD;&#xA;Sierra Leone (SLE)&#xD;&#xA;Singapore (SGP)&#xD;&#xA;This constitutes consent to store and use your identif&#xD;&#xA;When booking a reservation, this information is requ Sint Maarten (Dutch part) (SXM)&#xD;&#xA;government regulatory programs, including TSA Secu&#xD;&#xA;saving your Secure Flight Passenger Data, please ren Slovakia (SVK)&#xD;&#xA;Slovenia (SVN)&#xD;&#xA;Solomon Islands (SLB)" Position="1097, 278" ScaleFactor="2">
+                        <uc:CVCache.CvAnchorRelations>
+                          <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                        </uc:CVCache.CvAnchorRelations>
+                        <uc:CVCache.CvUiElements>
+                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="32">
+                            <uc:CvElementInfo Category="Icon" Region="509, 321, 23, 24" />
+                            <uc:CvElementInfo Category="Icon" Region="234, 423, 22, 22" />
+                            <uc:CvElementInfo Category="InputBox" Region="292, 413, 250, 43" />
+                            <uc:CvElementInfo Category="InputBox" Region="16, 515, 253, 43" />
+                            <uc:CvElementInfo Category="InputBox" Region="293, 212, 250, 42" />
+                            <uc:CvElementInfo Category="InputBox" Region="294, 313, 248, 43" />
+                            <uc:CvElementInfo Category="InputBox" Region="16, 212, 252, 43" />
+                            <uc:CvElementInfo Category="InputBox" Region="17, 414, 251, 41" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="295, 678, 310, 40" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="356, 391, 14, 14" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="300, 678, 304, 40" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="19, 415, 249, 41" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="298, 718, 303, 47" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="291, 212, 248, 41" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="287, 314, 254, 42" />
+                            <uc:CvElementInfo Category="InputBox" Region="17, 314, 249, 41" />
+                            <uc:CvElementInfo Category="ArrowButton" Region="229, 320, 24, 27" />
+                          </scg:List>
+                        </uc:CVCache.CvUiElements>
+                        <uc:CVCache.OcrTexts>
+                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="96">
+                            <uc:OcrTextInfo Region="23, 100, 69, 18" Text="Passport" />
+                            <uc:OcrTextInfo Region="95, 100, 33, 14" Text="Info" />
+                            <uc:OcrTextInfo Region="23, 129, 42, 12" Text="Please" />
+                            <uc:OcrTextInfo Region="69, 131, 36, 11" Text="enter" />
+                            <uc:OcrTextInfo Region="107, 132, 32, 13" Text="your" />
+                            <uc:OcrTextInfo Region="142, 129, 78, 13" Text="information" />
+                            <uc:OcrTextInfo Region="223, 129, 46, 16" Text="exactly" />
+                            <uc:OcrTextInfo Region="272, 132, 15, 10" Text="as" />
+                            <uc:OcrTextInfo Region="291, 129, 9, 12" Text="it" />
+                            <uc:OcrTextInfo Region="303, 132, 54, 13" Text="appears" />
+                            <uc:OcrTextInfo Region="360, 132, 17, 10" Text="on" />
+                            <uc:OcrTextInfo Region="380, 132, 32, 13" Text="your" />
+                            <uc:OcrTextInfo Region="414, 131, 59, 14" Text="passport" />
+                            <uc:OcrTextInfo Region="476, 129, 25, 12" Text="and" />
+                            <uc:OcrTextInfo Region="504, 129, 31, 13" Text="then" />
+                            <uc:OcrTextInfo Region="22, 149, 38, 15" Text="verify" />
+                            <uc:OcrTextInfo Region="63, 149, 10, 12" Text="it" />
+                            <uc:OcrTextInfo Region="74, 149, 20, 12" Text="for" />
+                            <uc:OcrTextInfo Region="98, 149, 41, 12" Text="future" />
+                            <uc:OcrTextInfo Region="142, 152, 23, 10" Text="use" />
+                            <uc:OcrTextInfo Region="169, 151, 14, 11" Text="at" />
+                            <uc:OcrTextInfo Region="185, 152, 8, 10" Text="a" />
+                            <uc:OcrTextInfo Region="197, 149, 34, 12" Text="kiosk" />
+                            <uc:OcrTextInfo Region="234, 152, 15, 10" Text="or" />
+                            <uc:OcrTextInfo Region="252, 152, 17, 9" Text="on" />
+                            <uc:OcrTextInfo Region="273, 149, 22, 12" Text="the" />
+                            <uc:OcrTextInfo Region="298, 152, 30, 13" Text="app." />
+                            <uc:OcrTextInfo Region="19, 190, 69, 12" Text="Firstname" />
+                            <uc:OcrTextInfo Region="295, 191, 68, 12" Text="Lastname" />
+                            <uc:OcrTextInfo Region="35, 226, 51, 13" Text="Charles" />
+                            <uc:OcrTextInfo Region="312, 226, 25, 13" Text="Kim" />
+                            <uc:OcrTextInfo Region="19, 291, 51, 12" Text="Gender" />
+                            <uc:OcrTextInfo Region="295, 292, 33, 12" Text="Date" />
+                            <uc:OcrTextInfo Region="331, 291, 15, 13" Text="of" />
+                            <uc:OcrTextInfo Region="348, 291, 35, 13" Text="Birth" />
+                            <uc:OcrTextInfo Region="234, 329, 14, 10" Text="v" />
+                            <uc:OcrTextInfo Region="312, 327, 83, 16" Text="MM/dd/yyyy" />
+                            <uc:OcrTextInfo Region="19, 392, 70, 16" Text="Expiration" />
+                            <uc:OcrTextInfo Region="92, 392, 32, 13" Text="date" />
+                            <uc:OcrTextInfo Region="295, 393, 60, 15" Text="Passport" />
+                            <uc:OcrTextInfo Region="358, 392, 10, 12" Text="#" />
+                            <uc:OcrTextInfo Region="35, 428, 84, 16" Text="MM/dd/yyyy" />
+                            <uc:OcrTextInfo Region="19, 493, 37, 12" Text="Place" />
+                            <uc:OcrTextInfo Region="58, 493, 15, 13" Text="of" />
+                            <uc:OcrTextInfo Region="76, 493, 34, 13" Text="birth" />
+                            <uc:OcrTextInfo Region="295, 493, 108, 16" Text="Country/Region" />
+                            <uc:OcrTextInfo Region="406, 493, 15, 12" Text="of" />
+                            <uc:OcrTextInfo Region="424, 493, 69, 12" Text="Residence" />
+                            <uc:OcrTextInfo Region="311, 533, 39, 12" Text="Sierra" />
+                            <uc:OcrTextInfo Region="354, 533, 41, 12" Text="Leone" />
+                            <uc:OcrTextInfo Region="398, 533, 32, 14" Text="(SLE)" />
+                            <uc:OcrTextInfo Region="311, 573, 68, 16" Text="Singapore" />
+                            <uc:OcrTextInfo Region="382, 573, 36, 15" Text="(SGP)" />
+                            <uc:OcrTextInfo Region="22, 585, 22, 10" Text="This" />
+                            <uc:OcrTextInfo Region="47, 586, 58, 10" Text="constitutes" />
+                            <uc:OcrTextInfo Region="107, 587, 42, 9" Text="consent" />
+                            <uc:OcrTextInfo Region="150, 587, 11, 9" Text="to" />
+                            <uc:OcrTextInfo Region="164, 587, 27, 9" Text="store" />
+                            <uc:OcrTextInfo Region="193, 585, 21, 11" Text="and" />
+                            <uc:OcrTextInfo Region="216, 587, 18, 8" Text="use" />
+                            <uc:OcrTextInfo Region="236, 587, 25, 11" Text="your" />
+                            <uc:OcrTextInfo Region="263, 585, 34, 10" Text="identif" />
+                            <uc:OcrTextInfo Region="22, 605, 31, 10" Text="When" />
+                            <uc:OcrTextInfo Region="56, 605, 43, 12" Text="booking" />
+                            <uc:OcrTextInfo Region="100, 608, 7, 8" Text="a" />
+                            <uc:OcrTextInfo Region="110, 606, 62, 11" Text="reservation," />
+                            <uc:OcrTextInfo Region="173, 605, 21, 11" Text="this" />
+                            <uc:OcrTextInfo Region="196, 605, 62, 10" Text="information" />
+                            <uc:OcrTextInfo Region="260, 605, 9, 10" Text="is" />
+                            <uc:OcrTextInfo Region="272, 607, 24, 11" Text="requ" />
+                            <uc:OcrTextInfo Region="311, 612, 26, 13" Text="Sint" />
+                            <uc:OcrTextInfo Region="341, 613, 55, 12" Text="Maarten" />
+                            <uc:OcrTextInfo Region="400, 612, 44, 15" Text="(Dutch" />
+                            <uc:OcrTextInfo Region="447, 613, 32, 16" Text="part)" />
+                            <uc:OcrTextInfo Region="482, 613, 38, 14" Text="(SXM)" />
+                            <uc:OcrTextInfo Region="23, 627, 65, 11" Text="government" />
+                            <uc:OcrTextInfo Region="89, 625, 55, 13" Text="regulatory" />
+                            <uc:OcrTextInfo Region="146, 627, 54, 11" Text="programs," />
+                            <uc:OcrTextInfo Region="203, 625, 48, 13" Text="including" />
+                            <uc:OcrTextInfo Region="253, 625, 20, 10" Text="TSA" />
+                            <uc:OcrTextInfo Region="275, 625, 22, 10" Text="Secu" />
+                            <uc:OcrTextInfo Region="22, 646, 34, 12" Text="saving" />
+                            <uc:OcrTextInfo Region="59, 647, 25, 11" Text="your" />
+                            <uc:OcrTextInfo Region="85, 645, 36, 10" Text="Secure" />
+                            <uc:OcrTextInfo Region="123, 645, 30, 13" Text="Flight" />
+                            <uc:OcrTextInfo Region="155, 646, 54, 12" Text="Passenger" />
+                            <uc:OcrTextInfo Region="212, 645, 28, 12" Text="Data," />
+                            <uc:OcrTextInfo Region="242, 645, 34, 13" Text="please" />
+                            <uc:OcrTextInfo Region="279, 647, 18, 8" Text="ren" />
+                            <uc:OcrTextInfo Region="311, 652, 54, 13" Text="Slovakia" />
+                            <uc:OcrTextInfo Region="368, 653, 34, 14" Text="(SVK)" />
+                            <uc:OcrTextInfo Region="311, 692, 55, 13" Text="Slovenia" />
+                            <uc:OcrTextInfo Region="370, 693, 36, 14" Text="(SVN)" />
+                            <uc:OcrTextInfo Region="311, 732, 59, 13" Text="Solomon" />
+                            <uc:OcrTextInfo Region="373, 732, 48, 13" Text="Islands" />
+                            <uc:OcrTextInfo Region="424, 733, 34, 15" Text="(SLB)" />
+                          </scg:List>
+                        </uc:CVCache.OcrTexts>
+                      </uc:CVCache>
+                      <uc:CVCache DataSent="False" DisplayName="Main Screen" Id="a1b0f491-d0f0-4474-91e1-63b2006ba32a" InformativeScreenshot="c18f7173e3ffc5b300dde56af6185aeb" LogicalPosition="939, 500" OcrText="Passport Info&#xD;&#xA;Please enter your information exactly as it appears on your passport and then verify it&#xD;&#xA;for future use at a kiosk or on the app.&#xD;&#xA;Firstname Lastname&#xD;&#xA;Gender Date of Birth&#xD;&#xA;v MM/dd/yyyy&#xD;&#xA;Expiration date Passport #&#xD;&#xA;MM/dd/yyyy&#xD;&#xA;Place of birth Country/Region of Residence v&#xD;&#xA;This constitutes consent to store and use your identification data as described in Privacy Policy. When booking&#xD;&#xA;a reservation, this information is required for compliance with U.S. and foreign government regulatory&#xD;&#xA;programs, including TSA Secure Flight. If you decide at any time to stop saving your Secure Flight Passenger&#xD;&#xA;Data, please remove record. Save Cancel" Position="939, 500" ScaleFactor="2">
+                        <uc:CVCache.CvAnchorRelations>
+                          <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                        </uc:CVCache.CvAnchorRelations>
+                        <uc:CVCache.CvUiElements>
+                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="32">
+                            <uc:CvElementInfo Category="Icon" Region="274, 342, 21, 22" />
+                            <uc:CvElementInfo Category="Icon" Region="581, 242, 21, 23" />
+                            <uc:CvElementInfo Category="InputBox" Region="336, 333, 278, 42" />
+                            <uc:CvElementInfo Category="InputBox" Region="28, 131, 283, 43" />
+                            <uc:CvElementInfo Category="InputBox" Region="332, 131, 283, 42" />
+                            <uc:CvElementInfo Category="InputBox" Region="32, 435, 275, 40" />
+                            <uc:CvElementInfo Category="Button" Region="461, 606, 67, 42" />
+                            <uc:CvElementInfo Category="InputBox" Region="33, 333, 274, 42" />
+                            <uc:CvElementInfo Category="InputBox" Region="341, 232, 273, 42" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="461, 607, 67, 42" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="38, 333, 270, 41" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="335, 233, 281, 41" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="399, 310, 14, 14" />
+                            <uc:CvElementInfo Category="InputBox" Region="30, 232, 279, 42" />
+                            <uc:CvElementInfo Category="InputBox" Region="335, 434, 279, 42" />
+                            <uc:CvElementInfo Category="ArrowButton" Region="269, 240, 24, 27" />
+                            <uc:CvElementInfo Category="ArrowButton" Region="577, 444, 22, 22" />
+                          </scg:List>
+                        </uc:CVCache.CvUiElements>
+                        <uc:CVCache.OcrTexts>
+                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="102">
+                            <uc:OcrTextInfo Region="35, 19, 69, 18" Text="Passport" />
+                            <uc:OcrTextInfo Region="106, 19, 33, 14" Text="Info" />
+                            <uc:OcrTextInfo Region="35, 48, 42, 12" Text="Please" />
+                            <uc:OcrTextInfo Region="81, 50, 35, 11" Text="enter" />
+                            <uc:OcrTextInfo Region="119, 51, 32, 13" Text="your" />
+                            <uc:OcrTextInfo Region="153, 48, 78, 12" Text="information" />
+                            <uc:OcrTextInfo Region="235, 48, 46, 16" Text="exactly" />
+                            <uc:OcrTextInfo Region="284, 51, 15, 10" Text="as" />
+                            <uc:OcrTextInfo Region="302, 48, 9, 12" Text="it" />
+                            <uc:OcrTextInfo Region="314, 51, 54, 13" Text="appears" />
+                            <uc:OcrTextInfo Region="371, 51, 17, 10" Text="on" />
+                            <uc:OcrTextInfo Region="391, 51, 31, 13" Text="your" />
+                            <uc:OcrTextInfo Region="426, 50, 59, 14" Text="passport" />
+                            <uc:OcrTextInfo Region="487, 48, 25, 12" Text="and" />
+                            <uc:OcrTextInfo Region="515, 48, 31, 12" Text="then" />
+                            <uc:OcrTextInfo Region="549, 48, 38, 16" Text="verify" />
+                            <uc:OcrTextInfo Region="590, 48, 10, 12" Text="it" />
+                            <uc:OcrTextInfo Region="34, 68, 20, 13" Text="for" />
+                            <uc:OcrTextInfo Region="57, 68, 41, 12" Text="future" />
+                            <uc:OcrTextInfo Region="101, 71, 24, 10" Text="use" />
+                            <uc:OcrTextInfo Region="128, 69, 14, 11" Text="at" />
+                            <uc:OcrTextInfo Region="145, 71, 8, 10" Text="a" />
+                            <uc:OcrTextInfo Region="156, 68, 35, 13" Text="kiosk" />
+                            <uc:OcrTextInfo Region="193, 71, 15, 10" Text="or" />
+                            <uc:OcrTextInfo Region="212, 71, 17, 9" Text="on" />
+                            <uc:OcrTextInfo Region="232, 68, 23, 12" Text="the" />
+                            <uc:OcrTextInfo Region="257, 71, 29, 13" Text="app." />
+                            <uc:OcrTextInfo Region="32, 109, 70, 12" Text="Firstname" />
+                            <uc:OcrTextInfo Region="338, 109, 68, 12" Text="Lastname" />
+                            <uc:OcrTextInfo Region="31, 210, 52, 12" Text="Gender" />
+                            <uc:OcrTextInfo Region="338, 211, 33, 12" Text="Date" />
+                            <uc:OcrTextInfo Region="374, 210, 16, 12" Text="of" />
+                            <uc:OcrTextInfo Region="392, 210, 34, 12" Text="Birth" />
+                            <uc:OcrTextInfo Region="274, 248, 14, 10" Text="v" />
+                            <uc:OcrTextInfo Region="355, 246, 83, 16" Text="MM/dd/yyyy" />
+                            <uc:OcrTextInfo Region="32, 311, 70, 16" Text="Expiration" />
+                            <uc:OcrTextInfo Region="105, 311, 32, 13" Text="date" />
+                            <uc:OcrTextInfo Region="338, 311, 60, 16" Text="Passport" />
+                            <uc:OcrTextInfo Region="401, 311, 11, 12" Text="#" />
+                            <uc:OcrTextInfo Region="48, 347, 84, 16" Text="MM/dd/yyyy" />
+                            <uc:OcrTextInfo Region="32, 412, 37, 13" Text="Place" />
+                            <uc:OcrTextInfo Region="71, 412, 16, 13" Text="of" />
+                            <uc:OcrTextInfo Region="89, 412, 34, 13" Text="birth" />
+                            <uc:OcrTextInfo Region="339, 412, 108, 15" Text="Country/Region" />
+                            <uc:OcrTextInfo Region="450, 412, 15, 12" Text="of" />
+                            <uc:OcrTextInfo Region="468, 412, 69, 12" Text="Residence" />
+                            <uc:OcrTextInfo Region="581, 450, 14, 9" Text="v" />
+                            <uc:OcrTextInfo Region="34, 504, 22, 10" Text="This" />
+                            <uc:OcrTextInfo Region="58, 505, 58, 10" Text="constitutes" />
+                            <uc:OcrTextInfo Region="118, 505, 42, 9" Text="consent" />
+                            <uc:OcrTextInfo Region="161, 505, 12, 10" Text="to" />
+                            <uc:OcrTextInfo Region="175, 505, 27, 10" Text="store" />
+                            <uc:OcrTextInfo Region="205, 504, 20, 10" Text="and" />
+                            <uc:OcrTextInfo Region="228, 507, 18, 8" Text="use" />
+                            <uc:OcrTextInfo Region="248, 506, 25, 11" Text="your" />
+                            <uc:OcrTextInfo Region="275, 504, 68, 10" Text="identification" />
+                            <uc:OcrTextInfo Region="346, 504, 23, 10" Text="data" />
+                            <uc:OcrTextInfo Region="371, 506, 12, 8" Text="as" />
+                            <uc:OcrTextInfo Region="386, 504, 51, 11" Text="described" />
+                            <uc:OcrTextInfo Region="439, 504, 10, 10" Text="in" />
+                            <uc:OcrTextInfo Region="452, 504, 38, 13" Text="Privacy" />
+                            <uc:OcrTextInfo Region="491, 504, 32, 13" Text="Policy." />
+                            <uc:OcrTextInfo Region="526, 504, 31, 10" Text="When" />
+                            <uc:OcrTextInfo Region="560, 504, 42, 12" Text="booking" />
+                            <uc:OcrTextInfo Region="34, 526, 6, 8" Text="a" />
+                            <uc:OcrTextInfo Region="43, 524, 62, 12" Text="reservation," />
+                            <uc:OcrTextInfo Region="107, 524, 20, 10" Text="this" />
+                            <uc:OcrTextInfo Region="129, 524, 62, 10" Text="information" />
+                            <uc:OcrTextInfo Region="194, 524, 9, 10" Text="is" />
+                            <uc:OcrTextInfo Region="205, 524, 44, 13" Text="required" />
+                            <uc:OcrTextInfo Region="251, 524, 16, 11" Text="for" />
+                            <uc:OcrTextInfo Region="269, 524, 60, 12" Text="compliance" />
+                            <uc:OcrTextInfo Region="331, 524, 23, 11" Text="with" />
+                            <uc:OcrTextInfo Region="357, 524, 20, 10" Text="U.S." />
+                            <uc:OcrTextInfo Region="379, 524, 20, 10" Text="and" />
+                            <uc:OcrTextInfo Region="401, 524, 38, 13" Text="foreign" />
+                            <uc:OcrTextInfo Region="442, 525, 65, 12" Text="government" />
+                            <uc:OcrTextInfo Region="508, 524, 55, 13" Text="regulatory" />
+                            <uc:OcrTextInfo Region="35, 546, 53, 11" Text="programs," />
+                            <uc:OcrTextInfo Region="91, 544, 48, 13" Text="including" />
+                            <uc:OcrTextInfo Region="140, 544, 21, 10" Text="TSA" />
+                            <uc:OcrTextInfo Region="163, 544, 36, 10" Text="Secure" />
+                            <uc:OcrTextInfo Region="202, 544, 31, 12" Text="Flight." />
+                            <uc:OcrTextInfo Region="236, 544, 9, 10" Text="If" />
+                            <uc:OcrTextInfo Region="246, 546, 20, 11" Text="you" />
+                            <uc:OcrTextInfo Region="268, 544, 35, 10" Text="decide" />
+                            <uc:OcrTextInfo Region="305, 545, 11, 10" Text="at" />
+                            <uc:OcrTextInfo Region="318, 546, 20, 11" Text="any" />
+                            <uc:OcrTextInfo Region="339, 545, 24, 10" Text="time" />
+                            <uc:OcrTextInfo Region="365, 545, 12, 9" Text="to" />
+                            <uc:OcrTextInfo Region="379, 545, 24, 12" Text="stop" />
+                            <uc:OcrTextInfo Region="404, 545, 34, 12" Text="saving" />
+                            <uc:OcrTextInfo Region="440, 547, 25, 10" Text="your" />
+                            <uc:OcrTextInfo Region="467, 544, 36, 10" Text="Secure" />
+                            <uc:OcrTextInfo Region="505, 544, 30, 13" Text="Flight" />
+                            <uc:OcrTextInfo Region="537, 545, 54, 12" Text="Passenger" />
+                            <uc:OcrTextInfo Region="34, 564, 28, 12" Text="Data," />
+                            <uc:OcrTextInfo Region="64, 564, 34, 13" Text="please" />
+                            <uc:OcrTextInfo Region="101, 566, 40, 8" Text="remove" />
+                            <uc:OcrTextInfo Region="143, 564, 36, 10" Text="record." />
+                            <uc:OcrTextInfo Region="479, 621, 33, 12" Text="Save" />
+                            <uc:OcrTextInfo Region="551, 621, 46, 13" Text="Cancel" />
+                          </scg:List>
+                        </uc:CVCache.OcrTexts>
+                      </uc:CVCache>
+                    </scg:List>
+                  </uc:CvCacheContainer.Caches>
+                </uc:CvCacheContainer>
+              </p:CVScope.DesignTimeCacheContainer>
+              <p:CVScope.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p1:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[GlobalVariablesNamespace.GlobalVariables.CVAPIKey]" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_8" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
+                </ActivityFunc>
+              </p:CVScope.OCREngine>
+              <p:CVScope.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4de519db-0bad-4f91-8eca-58962bb52816" InformativeScreenshot="35064fb53d0f56d6047cc141b627eaa4" Selector="&lt;webctrl tag='MAT-CARD' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </p:CVScope.Target>
+            </p:CVScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVFhH7ZexSwMxGMU7iJM4iCRX6egkUm4WJ5HLVYqDf0BxcHZycnWQIk7i4OgkDo4OIk4OTg4dnUWcxEFESK7El/D1LtdDUa+9Ir0Hb8h7X5JfS9ujFRkwPUqXAP0AbSnYxlBt7nDuTANgoDJkEcQYAKiAt3DmFXwkhTdNcTEAUcDqfee2qfo5ANYn8A15k+KM0J0lc9zux6tvYp2cG7BzOwz9BuDe6fYozgjdYzLHt02mhTeFdYfyD5y7aoehQgCMdMOblIL7KqzOUmRVGEAkeD0KPd8YEDMUFweA9VsvV4K3KC4BSoD/BXDrdMcUZ4QuvggAWxQPBODC6a4pTikK2Zwzg4tYk6r8ACpgO07XjUR1kapYyA+cGa3Waoyq/AAyZDVkyumfzFuM3MeBS1gfwl2nv6StVljnAzBCtp/qv/Y7fvcXaJsVsvwAujE/gdw8lpOZrF9kyFdoSyzk+QF6QrcMn8IP8Cv8DJtvyS4+K/GDxhW6O9g8kjsAWKf4bwCDVAnwPcDI/5iMwOMOwPQnFLezb0DhfhIAAAAASUVORK5CYII=" InformativeScreenshot="505df791835f13e53b5b846abfb42248.jpg" Selector="&lt;html app='chrome.exe' title='GammaDelta Airlines' /&gt;" Url="https://uipathdemo.azurewebsites.net/passport/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
